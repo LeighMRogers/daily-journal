@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+   <meta charset=UTF-8>
+   <meta name=viewport content=width=, initial-scale=1.0>
+   <meta http-equiv=X-UA-Compatible content=ie=edge>
+   <title>Daily Journal</title>
+   <link rel="stylesheet" type="text/css" href="src/styles/main.css">
+</head>
+
+<body>
+   <h1>Daily Journal</h1>
+    <form action="">
+        <fieldset>
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+
+        <fieldset>
+            <label for="conceptsCovered">Concepts Covered</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+
+        <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+
+            <!--
+            <input type="text" name="journalEntry" id="journalEntry">
+        -->
+            <textarea rows="3" cols="20>">Enter text ...</textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="mood">Mood:
+               <select name="mood">
+                  <option value ="option">Select Option</option>
+                  <option value="JOY">JOY</option>
+                  <option value="FEAR">FEAR</option>
+                  <option value="ANGER">ANGER</option>
+                  <option value="FRUSTRATION">FRUSTRATION</option>
+                  <option value="ACCEPTANCE">ACCEPTANCE</option>
+                  <option value="EXCITEMENT">EXCITEMENT</option>
+                  <option value="CONFUSION">CONFUSION</option>
+                  <option value="CURIOSITY">CURIOSITY</option>
+                  <option value="SURPRISE">SURPRISE</option>
+                  <option value="DETERMINATION">DETERMINATION</option>
+                  <option value="HOPE">HOPE</option>
+                  <option value="ANXIETY">ANXIETY</option>
+                  <option value="LOVE">LOVE</option>
+                  <option value="SADNESS">SADNESS</option>
+                  <option value="WONDER">WONDER</option>
+                  <option value="REJUVENATED">REJUVENATED</option>
+                  <option value="DRAINED">DRAINED</option>
+                  <option value="CONFIDENT">CONFIDENT</option>
+                  <option value="AMUSED">AMUSED</option>
+                  <option value="GUILTY">GUILTY</option>
+                  <option value="RELIEVED">RELIEVED</option>
+                  <option value="INDIFFERENCE">INDIFFERENCE</option>
+               </select> 
+            </label>
+        </fieldset>
+
+        <button>Record Journal Entry</button>
+
+    </form>
+    <script src="src/scripts/main.js"></script>
+</body> 
+
+</html>
