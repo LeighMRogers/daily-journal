@@ -11,59 +11,60 @@
 
 <body>
    <h1>Daily Journal</h1>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
+      <form action="">
+         <h2>Leigh's Attempt at Coding</h2>
+         <div class="form-container">
+            <fieldset>
+               <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
 
-        <fieldset>
-            <label for="conceptsCovered">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
-        </fieldset>
+            <fieldset>
+               <input type="text" placeholder=" Concepts Covered" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
 
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
+            <fieldset>
+               <!--
+               <input type="text" name="journalEntry" id="journalEntry">
+            -->
+               <textarea placeholder=" Journal Entry"></textarea>
+            </fieldset>
 
-            <!--
-            <input type="text" name="journalEntry" id="journalEntry">
-        -->
-            <textarea rows="3" cols="20>">Enter text ...</textarea>
-        </fieldset>
-
-        <fieldset>
-            <label for="mood">Mood:
+            <fieldset>
                <select name="mood">
-                  <option value ="option">Select Option</option>
-                  <option value="JOY">JOY</option>
-                  <option value="FEAR">FEAR</option>
-                  <option value="ANGER">ANGER</option>
-                  <option value="FRUSTRATION">FRUSTRATION</option>
-                  <option value="ACCEPTANCE">ACCEPTANCE</option>
-                  <option value="EXCITEMENT">EXCITEMENT</option>
-                  <option value="CONFUSION">CONFUSION</option>
-                  <option value="CURIOSITY">CURIOSITY</option>
-                  <option value="SURPRISE">SURPRISE</option>
-                  <option value="DETERMINATION">DETERMINATION</option>
-                  <option value="HOPE">HOPE</option>
-                  <option value="ANXIETY">ANXIETY</option>
-                  <option value="LOVE">LOVE</option>
-                  <option value="SADNESS">SADNESS</option>
-                  <option value="WONDER">WONDER</option>
-                  <option value="REJUVENATED">REJUVENATED</option>
-                  <option value="DRAINED">DRAINED</option>
-                  <option value="CONFIDENT">CONFIDENT</option>
-                  <option value="AMUSED">AMUSED</option>
-                  <option value="GUILTY">GUILTY</option>
-                  <option value="RELIEVED">RELIEVED</option>
-                  <option value="INDIFFERENCE">INDIFFERENCE</option>
+                  <option value ="option">Mood</option>
+                  <option value="JOY">Joy</option>
+                  <option value="FEAR">Fear</option>
+                  <option value="ANGER">Anger</option>
+                  <option value="FRUSTRATION">Frustrated</option>
+                  <option value="ACCEPTANCE">Acceptance</option>
+                  <option value="EXCITEMENT">Excited</option>
+                  <option value="CONFUSION">Confusion</option>
+                  <option value="CURIOSITY">Curious</option>
+                  <option value="SURPRISE">Surprise</option>
+                  <option value="DETERMINATION">Determined</option>
+                  <option value="HOPE">Hopeful</option>
+                  <option value="ANXIETY">Anxious</option>
+                  <option value="LOVE">Love</option>
+                  <option value="SADNESS">Sadness</option>
+                  <option value="WONDER">Wonder</option>
+                  <option value="REJUVENATED">Rejuvenated</option>
+                  <option value="DRAINED">Drained</option>
+                  <option value="CONFIDENT">Confident</option>
+                  <option value="AMUSED">Amused</option>
+                  <option value="GUILTY">Guilty</option>
+                  <option value="RELIEVED">Relieved</option>
+                  <option value="INDIFFERENCE">Indifferent</option>
                </select> 
-            </label>
-        </fieldset>
+            </fieldset>
+         </div>
+        
 
-        <button>Record Journal Entry</button>
+      <button>Submit</button>
 
     </form>
+    <footer>
+       <p>&copy; Leigh Rogers | 2019</p>
+    </footer>
     <script src="src/scripts/main.js"></script>
 </body> 
 
