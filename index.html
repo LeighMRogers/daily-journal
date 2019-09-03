@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang=en>
-
+<html lang="en">
 <head>
-   <meta charset=UTF-8>
-   <meta name=viewport content=width=, initial-scale=1.0>
-   <meta http-equiv=X-UA-Compatible content=ie=edge>
-   <title>Daily Journal</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Leigh's NSS Journal</title>
    <link rel="stylesheet" type="text/css" href="src/styles/main.css">
 </head>
 
@@ -15,22 +14,22 @@
          <h2>Leigh's Attempt at Coding</h2>
          <div class="form-container">
             <fieldset>
-               <input type="date" name="journalDate" id="journalDate">
+               <input id="date--id" type="date" name="journalDate" id="journalDate">
             </fieldset>
 
             <fieldset>
-               <input type="text" placeholder=" Concepts Covered" name="conceptsCovered" id="conceptsCovered">
+               <input id="concepts--id" type="text" placeholder=" Concepts Covered" name="conceptsCovered" id="conceptsCovered">
             </fieldset>
 
             <fieldset>
                <!--
                <input type="text" name="journalEntry" id="journalEntry">
             -->
-               <textarea placeholder=" Journal Entry"></textarea>
+               <textarea id="journal--entry--id" placeholder=" Journal Entry"></textarea>
             </fieldset>
 
             <fieldset>
-               <select name="mood">
+               <select id="mood--entry--id" name="mood">
                   <option value ="option">Mood</option>
                   <option value="JOY">Joy</option>
                   <option value="FEAR">Fear</option>
@@ -59,12 +58,15 @@
          </div>
         
 
-      <button>Submit</button>
-
+      <button id="submit--button--id">Submit</button>
+   <article class="entryLog"></article>
     </form>
     <footer>
        <p>&copy; Leigh Rogers | 2019</p>
     </footer>
+    <script src="src/scripts/data.js"></script>
+    <script src="src/scripts/entryComponent.js"></script>
+    <script src="src/scripts/entriesDOM.js"></script>
     <script src="src/scripts/journal.js"></script>
 </body> 
 
