@@ -1,11 +1,18 @@
 {
-    "journalArray": [
-        {
-            "id": 1,
-            "date": "test",
-            "concept": "test",
-            "entry": "test",
-            "mood": "test"
-        }
-    ]
+  "journalArray": [
+    {
+      "id": 1,
+      "date": "2019-08-25",
+      "concept": "test",
+      "entry": "test",
+      "mood": "test"
+    },
+    {
+      "date": "2019-09-12",
+      "concept": "Delete and Editing",
+      "entry": "I learned about deleting and editing elements on the DOM. Please work!",
+      "mood": "FEAR",
+      "id": 2
+    }
+  ]
 }
