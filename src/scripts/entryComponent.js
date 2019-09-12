@@ -1,8 +1,5 @@
 const webComponent = {
 
-
-
-
     makeJournalEntry: (journalEntry) => {
         // Create your own HTML structure for a journal entry
         let newJournalObj = `
@@ -16,3 +13,5 @@ const webComponent = {
         return newJournalObj;
     }
 };
+
+export default webComponent

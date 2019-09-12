@@ -12,7 +12,7 @@ fieldset {
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    background-image: repeating-linear-gradient(indianred, steelblue);
+    background-color: indianred;
     color: white;
     padding: .3em;
     font-size: 5em;

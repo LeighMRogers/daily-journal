@@ -16,52 +16,28 @@
 
 //array - moved to entries.json
 
+import api from "./data.js";
+import injectDOM from "./entriesDOM.js";
 
+function addEntry(newEntry) {
+    journalEntry.push(newEntry);
+}
 
-// function addEntry(newEntry) {
-//     journalEntry.push(newEntry);
-// }
+document.querySelector("#submit--button--id").addEventListener("click", event => 
+    {
+        let dateInput = document.querySelector("#date--id").value;
+        let conceptInput = document.querySelector("concepts--id").value;
+        let entryInput = document.querySelector("journal--entry--id").value;
+        let moodInput = document.querySelector("#mood--entry--id").value;
 
-// document.querySelector("#submit--button--id").addEventListener("click", event => 
-//     {
-//         let dateInput = document.querySelector("#date--id").value;
-//         let conceptInput = document.querySelector("concepts--id").value;
-//         let entryInput = document.querySelector("journal--entry--id").value;
-//         let moodInput = document.querySelector("#mood--entry--id").value;
-
-//         makeJournalEntryComponent.innerHTML += journalBuilder(
-//             objectBuilder(dateInput, conceptInput, entryInput, moodInput)
-//         );
-//     });
-
-// const makeJournalEntryComponent = (journalEntry) => {
-//     // Create your own HTML structure for a journal entry
-//     let newJournalObj = `
-//         <article>
-//             <p>Date: ${journalEntry.date}</p>
-//             <p>Concept: ${journalEntry.concept}</p>
-//             <p>Entry: ${journalEntry.entry}</p>
-//             <p>Mood: ${journalEntry.mood}</p>  
-//         </article>
-//     `;
-//     return newJournalObj;
-// };
-
-// const journalContainer = document.querySelector(".entryLog");
+        makeJournalEntryComponent.innerHTML += journalBuilder(
+            objectBuilder(dateInput, conceptInput, entryInput, moodInput)
+        );
+    });
 
 /*
     Purpose: To render all journal entries to the DOM
     Arguments: entries (array of objects)
 */
-
-//fetching the local host - 
-// fetch("http://localhost:3000/journalArray")
-//     .then(response => response.json())
-//     .then(data => {
-//         // data.forEach(item => {
-//         //     const journalContainer = document.querySelector(".entryLog");
-//         //     journalContainer.innerHTML += makeJournalEntry(item);
-//         // })
-//     })
 
 api.getJournalEntries().then(data => injectDOM.addToDOM(data));

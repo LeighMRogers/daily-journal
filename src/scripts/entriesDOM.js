@@ -1,3 +1,5 @@
+import webComponent from "./entryComponent.js"
+
 const injectDOM = {
     
     addToDOM: function (entries){
@@ -7,3 +9,5 @@ const injectDOM = {
         })
     }
 }
+
+export default injectDOM
