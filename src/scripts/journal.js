@@ -42,4 +42,25 @@ const addEntry = document.querySelector("#submit--button--id").addEventListener(
         // );
     });
 
+//delete button api call:
+
+document.querySelector(".entryLog").addEventListener("click", event => {
+    if (event.target.id.startsWith("deleteButton--")) {
+        // Extract delete button id from the button's id attribute
+        console.log(event, event.target.id.split("--")[1])
+        // clear container before adding new entry
+        document.querySelector(".entryLog").innerHTML = "";
+        // call api.deleteEntry with a split on the "--" (event.target.id.split) and target the second index to get the ID
+        api.deleteEntry(event.target.id.split("--")[1])
+            .then(() => {
+                // 6. get all the entries again
+                api.getJournalEntries().then(data => injectDOM.addToDOM(data));
+            })
+    //if you see an edit button, do the following
+    } else if (event.target.id.startsWith("editButton--")) {
+        console.log("edit", event.target.id.split("--")[1])
+        editForm(event.target.id.split("--")[1])
+    }
+});
+
 
