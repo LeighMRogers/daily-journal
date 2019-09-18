@@ -5,6 +5,7 @@
 
 import api from "./data.js";
 import injectDOM from "./entriesDOM.js";
+import editForm from "./editForm.js";
 
 /*
     Purpose: To render all journal entries to the DOM
@@ -48,7 +49,7 @@ document.querySelector(".entryLog").addEventListener("click", event => {
     if (event.target.id.startsWith("deleteButton--")) {
         // Extract delete button id from the button's id attribute
         console.log(event, event.target.id.split("--")[1])
-        // clear container before adding new entry
+        // clear container before deleting entry
         document.querySelector(".entryLog").innerHTML = "";
         // call api.deleteEntry with a split on the "--" (event.target.id.split) and target the second index to get the ID
         api.deleteEntry(event.target.id.split("--")[1])
@@ -60,7 +61,14 @@ document.querySelector(".entryLog").addEventListener("click", event => {
     } else if (event.target.id.startsWith("editButton--")) {
         console.log("edit", event.target.id.split("--")[1])
         editForm(event.target.id.split("--")[1])
+
     }
 });
+
+// this calls the edit button
+document.querySelector("#edit--button--id").addEventListener("click", event => {
+    document.querySelector(".entryLog").innerHTML = "";
+    api.editEntry().then(data => injectDOM.addToDOM(data))
+})
 
 

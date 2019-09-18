@@ -58,9 +58,60 @@
          </div>
         
       <button type="button" id="submit--button--id">Submit</button>
-   <article class="entryLog"></article>
     </form>
 
+    <!--edit form-->
+    <form action="">
+      <div class="form-container">
+         <fieldset>
+            <input type="hidden" id="hiddenInput" value="">
+            <input id="edit--date--id" type="date" name="journalDate">
+         </fieldset>
+
+         <fieldset>
+            <input id="edit--concepts--id" type="text" name="conceptsCovered">
+         </fieldset>
+
+         <fieldset>
+            <!--
+            <input type="text" name="journalEntry" id="journalEntry">
+         -->
+            <textarea id="edit--journal--entry--id"></textarea>
+         </fieldset>
+
+         <fieldset>
+            <select id="edit--mood--entry--id" name="mood">
+               <option value ="option">Mood</option>
+               <option value="JOY">Joy</option>
+               <option value="FEAR">Fear</option>
+               <option value="ANGER">Anger</option>
+               <option value="FRUSTRATION">Frustrated</option>
+               <option value="ACCEPTANCE">Acceptance</option>
+               <option value="EXCITEMENT">Excited</option>
+               <option value="CONFUSION">Confusion</option>
+               <option value="CURIOSITY">Curious</option>
+               <option value="SURPRISE">Surprise</option>
+               <option value="DETERMINATION">Determined</option>
+               <option value="HOPE">Hopeful</option>
+               <option value="ANXIETY">Anxious</option>
+               <option value="LOVE">Love</option>
+               <option value="SADNESS">Sadness</option>
+               <option value="WONDER">Wonder</option>
+               <option value="REJUVENATED">Rejuvenated</option>
+               <option value="DRAINED">Drained</option>
+               <option value="CONFIDENT">Confident</option>
+               <option value="AMUSED">Amused</option>
+               <option value="GUILTY">Guilty</option>
+               <option value="RELIEVED">Relieved</option>
+               <option value="INDIFFERENCE">Indifferent</option>
+            </select> 
+         </fieldset>
+      </div>
+     
+   <button type="button" id="edit--button--id">Save Changes</button>
+<article class="entryLog"></article>
+ </form> <!--end of edit form-->
+ <article class="entryLog"></article>
     <footer>
        <p>&copy; Leigh Rogers | 2019</p>
     </footer>

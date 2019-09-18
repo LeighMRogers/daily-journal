@@ -23,11 +23,11 @@ const api = {
 	editEntry: id => {
 		const editedEntry = {
 			date: document.querySelector("#date--id").value,
-			concepts: document.querySelector("#concepts--id").value,
-            text: document.querySelector("#journal--entry--id").value,
+			concept: document.querySelector("#concepts--id").value,
+            entry: document.querySelector("#journal--entry--id").value,
             mood: document.querySelector("#mood--entry--id").value,
 		};
-		fetch(`http://localhost:3000/journalArray/${id}`, {
+		return fetch(`http://localhost:3000/journalArray/${id}`, {
 			method: "PATCH",
 			headers: {
 				"Content-Type": "application/json"
